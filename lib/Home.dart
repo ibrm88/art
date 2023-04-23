@@ -20,17 +20,12 @@ class _HomeState extends State<Home> {
         title: Text("كتاب فن اللامبالاة",
           style: GoogleFonts.getFont('Almarai'),
         ),
-
-
         backgroundColor: Color.fromARGB(255, 82, 86, 89),
       ),
-
       body:
-
       Stack(
         children:
         [Column(
-
           children:[Expanded(
             child: Scrollbar(
               thickness: 15,
@@ -39,8 +34,7 @@ class _HomeState extends State<Home> {
               thumbVisibility: true,
               child: ListView.builder(
                 scrollDirection: Axis.vertical,
-                itemCount: 200,
-
+                itemCount: 10,
                 itemBuilder: (context, index)
               {
                 return Column(
@@ -53,14 +47,12 @@ class _HomeState extends State<Home> {
                     height: MediaQuery.of(context).size.height *0.9,
                     color: Colors.white,
                     child: Column(
-
                     children: [
-
 
                       Text(
                         index.toString(),
                       ),
-                    ],      ),
+                    ],   ),
 
                       ),
 
@@ -70,7 +62,7 @@ class _HomeState extends State<Home> {
               ),
               ),
             ),
-    ],
+            ],
           ),
 
     ],  ),
