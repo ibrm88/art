@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
       supportedLocales: [Locale("ar", "AE")],
       locale: Locale("ar", "AE"),
 
-      home: Home(),
+      home: Home(i: 0,),
     );
   }
 }
